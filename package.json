@@ -1,0 +1,62 @@
+{
+  "name": "ternologic_task",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "^3.2.10",
+    "@material-ui/styles": "^4.10.0",
+    "@reach/router": "^1.3.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "jss-plugin-vendor-prefixer": "^10.5.0",
+    "i18next": "^19.8.3",
+    "immer": "^7.0.14",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.2",
+    "react-scripts": "^3.4.4",
+    "@types/ternologic-types": "file:src/ternologic-types",
+    "common": "file:src/common",
+    "locale": "file:src/locale",
+    "styles": "file:src/styles",
+    "utils": "file:src/utils"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "clean": "(DEL /F /S /Q node_modules || echo \"Not Found\") && DEL /F package-lock.json && npm install && npm install -D",
+    "build": "(RMDIR /Q /S build || echo \"Not Found\") && (RMDIR /Q /S ..\\..\\router\\static\\home\\ || echo \"Not Found\") && MKDIR ..\\..\\router\\static\\home\\ && react-scripts build && MOVE /Y build\\*.* ..\\..\\router\\static\\home && MOVE /Y build\\static ..\\..\\router\\static\\home && RMDIR /Q /S build",
+    "build-serve": "(RMDIR /Q /S build || echo \"Not Found\") && react-scripts build && serve build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}

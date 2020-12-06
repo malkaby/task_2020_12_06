@@ -1,0 +1,9 @@
+{
+  "name": "@types/ternologic-types",
+  "private": true,
+  "types": "index.d.ts",
+  "version": "0.1.0",
+  "author": "Ternologic",
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "Global Interfaces for the Task project"
+}
