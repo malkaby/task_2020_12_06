@@ -1,8 +1,8 @@
 // States and Actions
 import * as actions from './state/actions';
-import * as reducer from './state/reducer';
+import * as reducers from './state/reducers';
 
-export { actions, reducer };
+export { actions, reducers };
 
 // Components
 export { default as Form } from './components/macro/Form';
