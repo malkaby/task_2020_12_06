@@ -93,6 +93,8 @@ src
 ### Completed task should be:
 - Error free.
 - Properly commented.
+- Props documented - adhere to JSDoc syntax [jsdoc][jsdoc].
+- PropType checked - adhere to React type checking approach [PropTypes][react-typechecking].
 - All exceptions properly handled.
 - Unit tested (passed for all use cases).
 - Compatible with major browsers.
@@ -106,3 +108,5 @@ src
 [npm-image]: https://badgen.net/badge/npm/6.14/red?icon=npm
 [material-ui-url]: https://material-ui.com/
 [material-ui-image]: https://badgen.net/badge/material-ui/4.11/cyan
+[react-typechecking]: https://reactjs.org/docs/typechecking-with-proptypes.html
+[jsdoc]: https://jsdoc.app/
